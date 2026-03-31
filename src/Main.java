@@ -9,7 +9,7 @@ public class Main {
     }
 
     public static int task2(int[] array, int y) {
-        // same as task1, its O(n) doing constant calls and rising linearly
+        // same as task1, its O(n) doing calls and rising linearly
         if (y == 0) return 0;
         return array[y - 1] + task2(array, y - 1);
     }
